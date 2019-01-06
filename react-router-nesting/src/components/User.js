@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import Info from './User/Info'
-import Main from './User/Main'
 
 class User extends Component {
   constructor(props) {
@@ -11,17 +9,26 @@ class User extends Component {
     }
   } 
 
+  componentWillMount(){
+    console.log(this.props.routes)
+  }
+
   render() {
     return (
       <div className="user">
         <div className="content">
           <div className="left">
-            <div className="link"><Link to="/user/">个人中心</Link></div>
-            <Link to="/user/info">用户信息</Link>
+            <div className="link"><Link to="/user/">用户列表</Link></div>
+            <div className="link"><Link to="/user/add">增加用户</Link></div>
+            <Link to="/user/edit">编辑用户</Link>
           </div>
           <div className="right">    
-            <Route exact path="/user/" component={Main} />
-            <Route  path="/user/info" component={Info} />
+            {
+              this.props.routes.map((route,key)=>{
+                return   <Route key={key} exact path={route.path} component={route.component} />
+              })
+            }
+            {/* <Route  path="/user/add" component={UserAdd} /> */}
           </div>
         </div>
       </div>

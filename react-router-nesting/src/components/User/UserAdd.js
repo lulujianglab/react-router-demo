@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 
-class Shop extends Component {
+class UserAdd extends Component {
   constructor(props) {
     super(props)
       this.state = { 
-        msg:'我是一个商户组件'
+        msg:'我是一个User组件'
       }
     }
 
   render() {
     return (
-      <div className="shop">
-        shop组件
+      <div className="user">               
+        用户组件UserAdd
       </div>
     )
   }
 }
 
-export default Shop
+export default UserAdd

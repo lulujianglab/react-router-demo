@@ -71,4 +71,4 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 具体可以参考 Product.js组件 到 ProductContent.js 组件的传值方式
 
-## react-router-nesting 为简单的路由嵌套demo
+## react-router-nesting 为路由模块化、以及嵌套路由父子组件传值demo
