@@ -1,6 +1,6 @@
 # react路由的配置：
 
-[react-router](https://github.com/ReactTraining/react-router)可以让根组件动态的去挂载不同的其他组件（比如本 demo 中的首页组件、新闻组件、商品组件），根据用户访问的地址动态加载不同的组件
+[react-router ](https://github.com/ReactTraining/react-router)可以让根组件动态的去挂载不同的其他组件（比如本 demo 中的首页组件、新闻组件、商品组件），根据用户访问的地址动态加载不同的组件
 
 1. 找到[官方文档](https://reacttraining.com/react-router/web/example/basic)：https://reacttraining.com/react-router/web/example/basic
 
