@@ -2,7 +2,7 @@
 
 顶部和右侧分别有一级路由和二级路由，只改变右侧的内容
 
-注意：4.x react-router 嵌套路由模块化的一个固定写法
+注意：4.x `react-router` 嵌套路由模块化的一个固定写法
 
 ```js
 <Route key={key} exact path={route.path}                     
