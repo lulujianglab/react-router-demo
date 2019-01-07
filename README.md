@@ -1,6 +1,6 @@
 # react路由的配置：
 
-[react-router](https://github.com/ReactTraining/react-router)可以让根组件动态的去挂载不同的其他组件（比如本demo中的首页组件、新闻组件、商品组件），根据用户访问的地址动态加载不同的组件
+[react-router] (https://github.com/ReactTraining/react-router)可以让根组件动态的去挂载不同的其他组件（比如本 demo 中的首页组件、新闻组件、商品组件），根据用户访问的地址动态加载不同的组件
 
 1. 找到[官方文档](https://reacttraining.com/react-router/web/example/basic)：https://reacttraining.com/react-router/web/example/basic
 
@@ -31,21 +31,21 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 </Router>
 ```
 
-注意：**exact表示严格匹配**
+注意：**exact 表示严格匹配**
 
 # 页面传值
 
 一个页面跳转到另一个页面进行传值：
 
-1. get传值
+1. get 传值
 2. 动态路由
 3. localStorage
 
-这里主要用到的是动态路由和get传值
+这里主要用到的是动态路由和 get 传值
 
-## react动态路由传值
+## react 动态路由传值
 
-比如一个页面列表list点击不同item跳转到不同详情页，需要把item的值传入到详情页，这个时候就需要用到动态路由
+比如一个页面列表 list 点击不同 item 跳转到不同详情页，需要把 item 的值传入到详情页，这个时候就需要用到动态路由
 
 1. 动态路由配置
 
@@ -65,10 +65,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 `<Route path="/productcontent" component={ProductContent} />`
 
-2. 获取 this.props.location.search，可以通过 `url`模块解析出来，使用[url模块](https://www.npmjs.com/package/url)需要安装url模块
+2. 获取 `this.props.location.search` ，可以通过 `url`模块解析出来，使用[ url 模块](https://www.npmjs.com/package/url)需要安装 url 模块
 
 `cnpm install url --save`
 
 具体可以参考 Product.js组件 到 ProductContent.js 组件的传值方式
 
-## react-router-nesting 为路由模块化、以及嵌套路由父子组件传值demo
+## react-router-nesting 为路由模块化、以及嵌套路由父子组件传值 demo
