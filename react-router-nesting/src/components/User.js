@@ -9,7 +9,7 @@ class User extends Component {
     }
   } 
 
-  componentWillMount(){
+  componentDidMount(){
     console.log(this.props.routes)
   }
 
